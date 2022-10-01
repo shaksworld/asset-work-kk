@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Giving Crypto Payment</title>
+    <link rel="stylesheet" href="crypto.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main-container">
+            <h2>Deposit Via BTC</h2>
+            <div class="first-content">
+                <img src="./image/qr-code.jpeg" alt="BTC QR Code">
+                <p>Send only BTC to this deposit address.</p>
+            </div>
+            <div class="copy-container">
+                <div class="lebel">
+                    <h3>BTC Deposit Address</h3>
+                </div>
+                <div class="copy-text">
+                    <input type="text" value="1DiwUJfnxZN1SQAqJL29prTojbDi8xirDe" id="content">
+                    <button onclick="copyToClipboard()">copy</button>
+                </div>
+            </div>
+            <div class="begin">
+                <a href="./online.html">Back</a>
+                <a href="/home.html">Home</a>
+            </div>
+        </div>
+        
+        
+    </div>
+    <script src="./crypto.js"></script>
+
+    <script>
+        function copyToClipboard() {
+          var copyText = document.getElementById("content").value;
+          navigator.clipboard.writeText(copyText).then(() => {
+              // Alert the user that the action took place.
+              // Nobody likes hidden stuff being done under the hood!
+            //   alert("Copied to clipboard");
+          });
+        }
+      </script>
+</body>
+</html>

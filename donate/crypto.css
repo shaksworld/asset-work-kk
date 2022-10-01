@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+
+
+/* --ff-primary: "Roboto", sans-serif; */
+/* --ff-secondary: "Open Sans", sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    line-height: 1.5;
+    font-size: 0.875rem;
+    font-family: "Open Sans", sans-serif;
+    color: hsl(209, 61%, 16%);
+    background-color: hsl(210, 36%, 96%);
+    align-items: center;
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: 0.25rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+  color: hsl(210, 22%, 49%);
+}
+a {
+    text-decoration: none;
+  }
+.container{
+    width: 600px;
+    height: 900px;
+    margin: 100px 25%;
+    align-content: center;
+    text-align: center;
+    background-color: #fff;
+}
+
+@media screen and (max-width: 670px) {
+    .container{
+        margin: 10px 15px;
+        width: 100%;
+    }
+}
+.main-content{
+    width: 500px;
+    height: 90%;
+    align-content: center;
+}
+.main-content h2{
+    top: 20px;
+}
+.first-content img{
+    width: 350px;
+    height: 300px;
+}
+/*****************  *************/
+.copy-text{
+    background-color: hsl(210, 36%, 96%);
+    padding: 10px;
+    border: 1px solid #ddd;
+    width: 400px;
+    height: 50px;
+    align-content: center;
+    border-radius: 10px;
+    display: flex;
+    margin-left: 13%;
+    margin-top: 40px;
+}
+@media screen and (max-width: 670px) {
+    .copy-text{
+        width: 300px;
+    }
+}
+.copy-text input{
+    width: 350px;
+    height: 30px;
+    padding: 10px;
+    font-size: 17px;
+    color: hsl(209, 61%, 16%);
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.copy-text button{
+    /* width: 46px;
+    height: 23px; */
+    cursor: pointer;
+    color: hsl(209, 61%, 16%);
+    border: none;
+    outline: none;
+    
+}
+.copy-text button {
+    width: 43px;
+    height: 33px;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: transparent;
+}
+.copy-text button:hover{
+    color: rgb(219, 219, 219);
+}
